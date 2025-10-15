@@ -1,0 +1,21 @@
+.animg.animation{
+    width: 2500px;
+    top: 4700px;
+    left: -450px;
+
+}
+
+
+
+
+js :
+window.addEventListener('scroll', () => {
+    const image= document.getElementById('tswirak')
+    const scrollY= window.scrollY;
+    let newidth= Math.max(2000,5000-scrollY/2)
+
+    image.style.width= newidth + 'px'
+
+})
+
+
