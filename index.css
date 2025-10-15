@@ -74,22 +74,30 @@
       border: none;
       border-radius: 4px;
       color: white;
+      transition: 1s;
+    }
+
+    input:hover{
+      background-color: #2a2a2a;
+      transform: scale(1.1);
     }
 
     .btn-login {
       width: 100%;
       padding: 12px;
-      background-color: #e30613;
+      background-color: #e34806;
       border: none;
       border-radius: 4px;
       color: white;
       font-weight: bold;
       cursor: pointer;
       margin-top: 10px;
+      transition: 0.6s;
     }
 
     .btn-login:hover {
-      background-color: #b1040f;
+      background-color: #ff0011;
+      transform: scale(1.1);
     }
 
     .links {
