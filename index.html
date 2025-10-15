@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riot Login Mockup</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Parallax background layer -->
+  <div class="bg-parallax" aria-hidden="true"></div>
+
+  <div class="login-container">
+    <div class="logo">
+      <!-- Replace with real logo if needed -->
+      <img src="Screenshot 2025-10-08 211900.png" alt="Riot Logo">
+    </div>
+    <h2>Sign In</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">USERNAME</label>
+        <input type="text" id="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+      <button class="btn-login">Log In</button>
+    </form>
+    <div class="links">
+      <a href="#">Forgot Password?</a> | 
+      <a href="#">Create Account</a>
+    </div>
+  </div>
+
+  <script>
+    // Subtle parallax translation on mouse move
+    (function() {
+      const bg = document.querySelector('.bg-parallax');
+      if (!bg) return;
+
+      // Reduce sensitivity for a subtle effect
+      const strength = 0.03;
+
+      function onMove(e) {
+        // Use clientX/Y to get mouse position within viewport
+        const x = (e.clientX / window.innerWidth - 0.5) * 2; // -1 .. 1
+        const y = (e.clientY / window.innerHeight - 0.5) * 2;
+
+        const tx = Math.round(x * 100 * strength); // px
+        const ty = Math.round(y * 60 * strength); // px
+
+        // Use translate3d for GPU acceleration
+        bg.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(1.03)`;
+      }
+
+      // Smooth reset on mouse leave
+      function onLeave() {
+        bg.style.transform = 'translate3d(0,0,0) scale(1.03)';
+      }
+
+      window.addEventListener('mousemove', onMove);
+      window.addEventListener('mouseleave', onLeave);
+      window.addEventListener('blur', onLeave);
+    })();
+  </script>
+
+  
+</body>
+</html>

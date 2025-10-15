@@ -1,0 +1,116 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    /* Parallax background layer */
+    .bg-parallax {
+      position: fixed;
+      inset: 0; /* top:0; right:0; bottom:0; left:0 */
+      background-image: url('valorant-valorant-games-riot-games.webp');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.35) saturate(0.7) blur(2px);
+      transform: translate3d(0,0,0) scale(1.03);
+      transition: transform 350ms cubic-bezier(.2,.8,.2,1);
+      z-index: 0;
+      pointer-events: none; /* allow clicks through to the page */
+    }
+
+    .login-container {
+      background-color: #1e1e1e;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      width: 100%;
+      max-width: 360px;
+      position: relative;
+      z-index: 2; /* above background */
+      backdrop-filter: blur(4px) saturate(1.1);
+      background-image: linear-gradient(180deg, rgba(30,30,30,0.85), rgba(20,20,20,0.7));
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #2a2a2a;
+      border: none;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      background-color: #e30613;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-login:hover {
+      background-color: #b1040f;
+    }
+
+    .links {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .links a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 12px;
+      color: #555;
+    }
