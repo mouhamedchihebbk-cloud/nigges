@@ -267,7 +267,7 @@ header img {
 
 
 #h1playnow{
-    background-image: linear-gradient(to left , orange , red)
+    background-image: linear-gradient(to left , orange , red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 70px;
@@ -286,13 +286,3 @@ header img {
 
 
 
-#playnow{
-    background-color:rgba(255, 255, 255, 0.637);
-    position: absolute;
-    z-index: 120;
-    border-radius: 20px;
-    left: 500px;
-    width: 280px;
-    height: 140px;
-    
-}
