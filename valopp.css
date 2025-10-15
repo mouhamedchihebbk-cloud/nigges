@@ -1,0 +1,298 @@
+#backgroundvd {
+    width: 1600px;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    position: fixed;
+    top: -70px;
+    left: -100px;
+    pointer-events: none;
+}
+
+body {
+    background-color: black;
+}
+
+
+header {
+    width: 100%;
+    height: 200PX;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+
+
+
+header img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    z-index: auto;
+    left: 20px;
+    top: 20px;
+}
+
+
+
+
+#menubutton {
+    position: absolute;
+    z-index: 210;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-image: url('riot-games-icon-seeklogo.png');
+    background-size: cover;
+    left: 20px;
+    top: 20px;
+    transition: 0.5s;
+    ;
+}
+
+#menubutton.trs {
+    left: -20px;
+    opacity: 0;
+}
+
+
+#menubutton:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.687);
+}
+
+#menu {
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 110;
+    transition: 0.75s;
+    left: -300px;
+    top: 0px;
+
+}
+
+
+#menu.show {
+    left: 0px;
+
+}
+
+
+
+#closebutton {
+    color: black;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 0 0 0 20px;
+
+}
+
+#closebutton:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+
+
+
+
+#acc {
+    position: absolute;
+    z-index: 12;
+    color: rgb(255, 255, 255);
+    right: 100px;
+    top: 56px;
+    background-color: rgba(0, 0, 0, 0.756);
+    width: 150px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 1s;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+}
+
+#acc:hover{
+    background-color: rgba(255, 255, 255, 0.107);
+}
+
+
+.accbuttons {
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+
+}
+
+
+
+.accbuttons:hover {
+    background-color: rgba(255, 255, 255, 0.096);
+
+}
+
+#menuriotimage {
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 15px black);
+}
+
+
+
+#riotgames {
+    color: rgb(136, 0, 0);
+    position: relative;
+    left: 100px;
+    top: 27px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+
+
+
+#hrmenu {
+    position: relative;
+    top: 80px;
+}
+
+
+
+
+.links {
+    position: relative;
+    top: 90px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start ;
+    flex-direction: column;
+    
+}
+
+.links a{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+ 
+
+.links a:hover{
+    background-color: rgba(101, 101, 101, 0.388);
+    transform: scale(1.2);
+}
+
+
+
+#searchblock{
+    position: absolute;
+    z-index: 120;
+    right: 300px;
+    top: 40px;
+    transition: 1s;
+
+}
+
+
+#searchbutton{
+    border: none;
+    background-color:black;
+    border-radius: 50%;
+    background-image: url("images-removebg-preview.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    transition: 1s;
+
+}
+
+
+#searchinput{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    right: -45px;transition: 1s;
+}
+
+
+#searchblock:hover{
+    transform: scale(1.1);
+    
+}
+
+
+#searchblock:hover #searchbutton  {
+    background-color: rgb(183, 7, 7);
+}
+
+#searchblock:hover #searchinput{
+    background-color: rgb(91, 2, 2);
+}
+
+
+#h1playnow{
+    background-image: linear-gradient(to left , orange , red)
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+
+
+#h1playnowklma {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+
+
+#playnow{
+    background-color:rgba(255, 255, 255, 0.637);
+    position: absolute;
+    z-index: 120;
+    border-radius: 20px;
+    left: 500px;
+    width: 280px;
+    height: 140px;
+    
+}
