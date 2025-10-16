@@ -131,22 +131,22 @@ header img {
 }
 
 
-.accbuttons {
-    background-color: transparent;
+a.accbuttons {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 4px 0;
+    background: linear-gradient(135deg, #1f8cff 0%, #5a2dff 100%); /* adjust colors to match your theme */
+    color: #fff;
+    text-decoration: none;
     border: none;
-    transition: 0.5s;
-    color: white;
-    width: 100px;
-    border-radius: 20px;
-
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform .08s ease, opacity .08s ease;
 }
-
-
-
-.accbuttons:hover {
-    background-color: rgba(255, 255, 255, 0.096);
-
-}
+a.accbuttons:hover { opacity: 0.95; transform: translateY(-1px); }
+a.accbuttons:active { transform: translateY(0); }
 
 #menuriotimage {
     left: 20px;
