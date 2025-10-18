@@ -11,6 +11,12 @@
 
 body {
     background-color: black;
+    overflow: hidden;
+}
+
+
+body.after{
+    overflow-y: scroll;
 }
 
 
@@ -20,6 +26,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: start;
+    transition: 2s all;
+    
     
 }
 
@@ -266,23 +274,148 @@ header img {
 }
 
 
-#h1playnow{
-    background-image: linear-gradient(to left , orange , red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 70px;
-    position: relative;
-    text-align: center;
-    filter: drop-shadow(0 0 10px black);
-    
-    
-}
+
 
 
 
 #h1playnowklma {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
+}
+
+#firstone{
+    background-image: url('China_CG_Haven_Overlook.jpg'); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    opacity: 1;
+    transition: 2s all;
+
+}
+
+
+
+
+#animationbord1{
+    position: absolute;
+    z-index: 10000;
+    opacity: 1;
+    transition: 2s all;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to right,black,rgba(0, 0, 0, 0.789),rgb(0,0,0,0.5),rgb(0,0,0,0));
+}
+
+
+#animationbord2{
+    position: absolute;
+    z-index: 999;
+    opacity: 1;
+    transition: 2s all;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url('e7a3_ISO_Xbox_Desktop\ Horiz\ 1920x1080\ \(No\ copy\ No\ Logo\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#h1playnow{
+    background-image:linear-gradient(to left , orange , red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    z-index: 11200;
+    top: 120px;
+    left: 600px;
+    filter: drop-shadow(0 0 10px black);
+    cursor: pointer;
+    user-select: none;
+    transition: 2s all;
+    
+    
+}
+
+
+#h1playnow.anim2{
+    background-image: url('e7a3_ISO_Xbox_Desktop\ Horiz\ 1920x1080\ \(No\ copy\ No\ Logo\).png');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:1600px; 
+    background-position-x: -62px;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    z-index: 11200;
+    top: 60px;
+    left: 54px;
+    filter: drop-shadow(0 0 10px black);
+    cursor: pointer;
+    user-select: none;
+    transition: 2s all;
+    
+    
+}
+#h1playnow.anim22{
+    background-image: url('e7a3_ISO_Xbox_Desktop\ Horiz\ 1920x1080\ \(No\ copy\ No\ Logo\).png');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:1600px; 
+    background-position-x: -62px;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    z-index: 11200;
+    top: 60px;
+    left: 54px;
+    filter: drop-shadow(0 0 10px black);
+    cursor: pointer;
+    user-select: none;
+    transition: 4s all;
+    
+    
+}
+#h1playnow.anim3{
+    background-image: url('e7a3_ISO_Xbox_Desktop\ Horiz\ 1920x1080\ \(No\ copy\ No\ Logo\).png');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:1600px; 
+    background-position-x: -62px;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    z-index: 11200;
+    top: 60px;
+    left: -540px;
+    filter: drop-shadow(0 0 10px black);
+    cursor: pointer;
+    user-select: none;
+    transition: 4s all;
+    opacity: 0;
+    
+}
+
+#removeve{
+    display: block;
+}
+
+#removeve.on{
+    display: none;
 }
 
 
