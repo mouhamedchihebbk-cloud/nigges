@@ -38,6 +38,11 @@ const blackimg= document.getElementById("animationbord1")
 const raja3= document.getElementById("setout")
 const body=document.body
 const removing= document.getElementById("removeve")
+const welcoming= document.getElementById("welcoming")
+
+
+
+
 function aftertime(){
     firstimg.style.opacity=0
     playn.classList.toggle("anim2")
@@ -56,6 +61,7 @@ function removelab(){
 }
 function displayunac(){
     removing.classList.toggle("on")
+    welcoming.style.opacity=1
 }
 
 
