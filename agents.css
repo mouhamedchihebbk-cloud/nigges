@@ -1,0 +1,59 @@
+.Sage,.sova,.omen,.Brimstone,.Phoenix,.Cypher,.Raze,.Viper{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.Sage img.sageimg,
+.sova img.sovaimg,
+.omen img.omenimg,
+.Brimstone img.Brimstoneimg,
+.Phoenix img.phoeniximg,
+.Cypher img.cypherimg,
+.Raze img.razeimg,
+.Viper img.viperimg {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+.deadels_Sage,
+.deadels_sova,
+.deadels_Omen,
+.deadels_Brimstone,
+.deadels_Phoenix,
+.deadels_Cypher,
+.deadels_raze,
+.deadels_viper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.72);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .25s ease, transform .25s ease;
+    pointer-events: none;
+    z-index: 5;
+}
+.Sage:hover .deadels_Sage,
+.sova:hover .deadels_sova,
+.omen:hover .deadels_Omen,
+.Brimstone:hover .deadels_Brimstone,
+.Phoenix:hover .deadels_Phoenix,
+.Cypher:hover .deadels_Cypher,
+.Raze:hover .deadels_Raze,
+.Viper:hover .deadels_Viper {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body{
+    background-color: black;
+    color: white;
+}
